@@ -5,11 +5,23 @@
         <app-big-card 
         id='1'
         bannerImage="https://images.adsttc.com/media/images/63c5/b726/760d/d25c/1868/62b7/large_jpg/tornar-o-imaginario-visivel-as-cidades-futuristas-do-cinema_8.jpg?1673901872"
-        cardTitle="Lançamento do blog da MCK Enterprises."
+        cardTitle="Cities of the future."
         cardDescription="No dia 23/03/2022 está sendo lançado o blog oficial da MCK Enterprises. Empresa de um homem só fundada em 2022 em Portugal."
         >
         </app-big-card>
     </div>
+    <ul>
+        <li *ngFor="let e of itemList">
+            <div *ngIf="e.id !== '1'">
+                <app-small-card
+                id="{{ e.id }}"
+                bannerImage="{{ e.bannerImg }}"
+                cardTitle="{{ e.title }}"
+                ></app-small-card>
+            </div>
+        </li>
+    </ul>
+    <!--
     <div class="articles__others">
         <app-small-card
         id="2"
@@ -29,4 +41,5 @@
         cardTitle="A nossa casa dos sonhos."
         ></app-small-card>
     </div>
+    -->
 </div>

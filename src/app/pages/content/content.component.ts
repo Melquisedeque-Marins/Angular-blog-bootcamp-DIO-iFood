@@ -1,4 +1,3 @@
-import { DomElementSchemaRegistry } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { dataFake } from '../../data/dataFake';
